@@ -1,3 +1,4 @@
+import { DataLocalService } from './../../sercices/data-local.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,4 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss']
 })
-export class Tab3Page {}
+export class Tab3Page {
+
+  sliderOpts={
+   allowSlidePrev:false, 
+   allowSlideNext:false
+  }
+  constructor( public dl:DataLocalService){
+    
+  }
+
+}
